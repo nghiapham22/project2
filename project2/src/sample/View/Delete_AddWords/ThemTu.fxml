@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.AddDeleteFixWords.ControllerAddword">
+   <children>
+      <Button fx:id="btnChosePicture" layoutX="440.0" layoutY="100.0" mnemonicParsing="false" onAction="#onChosePicture" prefHeight="35.0" prefWidth="75.0" text="Chọn Ảnh">
+         <font>
+            <Font name="Arial Italic" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfTuTiengAnh" layoutX="132.0" layoutY="41.0" prefHeight="35.0" prefWidth="168.0" />
+      <TextField fx:id="tfTuTiengViet" layoutX="132.0" layoutY="82.0" prefHeight="35.0" prefWidth="168.0" />
+      <ImageView fx:id="imv" fitHeight="112.0" fitWidth="168.0" layoutX="390.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="59.0" layoutY="41.0" prefHeight="35.0" prefWidth="75.0" text="Tiếng Anh">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="82.0" prefHeight="35.0" prefWidth="75.0" text="Tiếng VIệt">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSave" layoutX="72.0" layoutY="306.0" mnemonicParsing="false" onAction="#onSave" prefHeight="35.0" prefWidth="118.0" style="-fx-background-color: ff7f50;" text="Lưu Từ Khóa" textFill="#6e176c">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="425.0" layoutY="306.0" mnemonicParsing="false" onAction="#onBack" prefHeight="35.0" prefWidth="118.0" style="-fx-background-color: ff7f50;" text="Quay Lại" textFill="#6e176c">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfSpelling" layoutX="132.0" layoutY="125.0" prefHeight="35.0" prefWidth="168.0" />
+      <Label layoutX="59.0" layoutY="129.0" prefHeight="28.0" prefWidth="75.0" text="Phiên Âm">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="258.0" prefHeight="35.0" prefWidth="69.0" text="Hashtag">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfPronounce" layoutX="132.0" layoutY="168.0" prefHeight="35.0" prefWidth="111.0" />
+      <TextField fx:id="tfSuggestedWords" layoutX="132.0" layoutY="211.0" prefHeight="35.0" prefWidth="168.0" />
+      <Label layoutX="62.0" layoutY="211.0" prefHeight="35.0" prefWidth="69.0" text="Từ Gợi Ý">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfHashtag" layoutX="132.0" layoutY="258.0" prefHeight="35.0" prefWidth="168.0" />
+      <Button fx:id="btnPlay" layoutX="300.0" layoutY="166.0" mnemonicParsing="false" onAction="#onPlay" prefHeight="0.0" prefWidth="47.0" text="Chạy" textFill="RED">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="62.0" layoutY="168.0" prefHeight="35.0" prefWidth="69.0" text="Phát Âm">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCheck" layoutX="251.0" layoutY="306.0" mnemonicParsing="false" onAction="#onCheck" prefHeight="35.0" prefWidth="118.0" style="-fx-background-color: ff7f50;" text="Kiểm Tra" textFill="#6e176c">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnChoseFile" layoutX="231.0" layoutY="168.0" mnemonicParsing="false" onAction="#onChoseFile" prefHeight="35.0" prefWidth="69.0" text="Chọn Tệp">
+         <font>
+            <Font name="Arial Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnPause" layoutX="300.0" layoutY="188.0" mnemonicParsing="false" onAction="#onPause" prefHeight="25.0" prefWidth="47.0" text="Dừng" textFill="BLUE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Button>
+      <TextField fx:id="tfChosePic" layoutX="426.0" layoutY="246.0" prefHeight="25.0" prefWidth="104.0" />
+      <DatePicker fx:id="dp" layoutX="407.0" layoutY="76.0" prefHeight="25.0" prefWidth="141.0" />
+      <Label fx:id="lbLoaiTu" layoutX="341.0" layoutY="41.0" prefHeight="35.0" prefWidth="69.0" text="Loại Từ">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbTime" layoutX="332.0" layoutY="75.0" prefHeight="28.0" prefWidth="75.0" text="Thời Gian">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfLoaiTu" layoutX="407.0" layoutY="41.0" prefHeight="35.0" prefWidth="141.0" />
+   </children>
+</Pane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.StartLearning.ControllerLevel1">
+   <children>
+      <Button fx:id="btnCheck" layoutX="409.0" layoutY="15.0" mnemonicParsing="false" onAction="#onCheck" text="Kiểm tra">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="tfCheck" layoutX="261.0" layoutY="15.0">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></TextField>
+      <TextArea fx:id="ta" layoutX="376.0" layoutY="112.0" prefHeight="242.0" prefWidth="193.0">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></TextArea>
+      <ImageView fx:id="imageView" fitHeight="149.0" fitWidth="209.0" layoutX="134.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnPhiemAm" layoutX="134.0" layoutY="100.0" mnemonicParsing="false" onAction="#onPhatAm" text="Phát âm">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnBack" layoutX="259.0" layoutY="361.0" mnemonicParsing="false" onAction="#onBack" style="-fx-background-color: #c0c0c0;" text="Quay lại">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Button>
+      <Label layoutX="201.0" layoutY="15.0" prefHeight="25.0" prefWidth="60.0" text="Tiếng Anh">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbGoiY" layoutX="217.0" layoutY="51.0" text=" ">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Label>
+      <Button fx:id="btnGoiY1" layoutX="261.0" layoutY="47.0" mnemonicParsing="false" onAction="#on1" prefHeight="25.0" prefWidth="27.0" text="1" textFill="RED">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnGoiY2" layoutX="303.0" layoutY="47.0" mnemonicParsing="false" onAction="#on2" prefHeight="25.0" prefWidth="27.0" text="2" textFill="LIMEGREEN">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnGoiY3" layoutX="342.0" layoutY="47.0" mnemonicParsing="false" onAction="#on3" prefHeight="25.0" prefWidth="27.0" text="3" textFill="BLUE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnGoiY4" layoutX="384.0" layoutY="47.0" mnemonicParsing="false" onAction="#on4" text="4" textFill="PURPLE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Button>
+      <Label layoutX="398.0" layoutY="88.0" prefHeight="25.0" prefWidth="149.0" text="Thông tin từ/cụm từ">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="184.0" layoutY="285.0" text="Ảnh minh họa">
+         <font>
+            <Font name="Arial Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

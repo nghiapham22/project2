@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.AddDeleteFixWords.ControllerAddDeleteFixWords">
+   <children>
+      <Button fx:id="btnAddWord" layoutX="167.0" layoutY="174.0" mnemonicParsing="false" onAction="#onAddWord" prefHeight="37.0" prefWidth="266.0" style="-fx-background-color: a52a2a;" text="Thêm Từ /Cụm Từ" textFill="#c7ee04">
+         <font>
+            <Font name="Arial Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="170.0" layoutY="265.0" mnemonicParsing="false" onAction="#onBack" prefHeight="37.0" prefWidth="266.0" style="-fx-background-color: a52a2a;" text="Quay Lại" textFill="#c7ee04">
+         <font>
+            <Font name="Arial Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnListWords" layoutX="167.0" layoutY="81.0" mnemonicParsing="false" onAction="#onListWords" prefHeight="37.0" prefWidth="266.0" style="-fx-background-color: a52a2a;" text="Danh Sách Từ/Cụm Từ " textFill="#c7ee04">
+         <font>
+            <Font name="Arial Italic" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
